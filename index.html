@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru>
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <span class="text">
+        <p>
+            Напишите небольшой текст на важную для вас тему, связанную с профессией. 
+            Сверстайте его в начале задания.
+        </p>
+        <p>
+            Напишите небольшой текст на важную для вас тему, связанную с профессией. 
+            Сверстайте его в начале задания.
+        </p>
+    </span>
+        <!--Рейтинг-->
+    <span class="rating" data-total-value="0">
+        <div class="rating__item" data-item-value="5">★</div>
+        <div class="rating__item" data-item-value="4">★</div>
+        <div class="rating__item" data-item-value="3">★</div>
+        <div class="rating__item" data-item-value="2">★</div>
+        <div class="rating__item" data-item-value="1">★</div>
+    </span>  
+        <!--Прогрессбар-->
+    <div class="progress">
+        <div class="progress__fill"></div>
+        <span class="progress__text">0%</span>
+    </div>
+        <!--Кнопки-->
+    <ol class="button">
+        <li><button title="progressBar width 0%" class="btn" onclick="updateProgressBar(pBar, 0)">Кнопка</button></li>
+        <li><button title="progressBar width 25%" class="btn" onclick="updateProgressBar(pBar, 25)">Кнопка</button></li>
+        <li><button title="progressBar width 50%" class="btn" onclick="updateProgressBar(pBar, 50)">Кнопка</button></li>
+        <li><button title="progressBar width 75%" class="btn" onclick="updateProgressBar(pBar, 75)">Кнопка</button></li>
+        <li><button title="progressBar width 100%" class="btn" onclick="updateProgressBar(pBar, 100)">Кнопка</button></li>
+    </ol>
+        <!--Иконки браузеров-->
+    <div class="browsers_list_icons">
+        <ul> 
+            <li><a href="#"><img src="img/Chrome.png" alt="ro" class="chrome"></a></li>
+            <li><a href="#"><img src="img/firefox.png" alt="Firefox" class="firefox"></a></li>
+            <li><a href="#"><img src="img/opera.png" alt="Opera" class="opera"></a></li>
+            <li><a href="#"><img src="img/safari.png" alt="Safari" class="safari"></a></li>
+            <li class="ie"><a href="#"><img src="img/explorer.png" alt="Internet Explorer" class="internet_explorer"></a></li>
+        </ul>
+    </div>
+        <!--Верстка текста-->
+    <h2 class="heading">Тема: «Сюжетный анапест:<br>основные моменты»</h2>
+    <section>
+        <div class="column_one">
+            <p>
+                Нельзя восстановить истинной хронологической последовательности событий, 
+                потому что мелькание мыслей параллельно. Структура аллитерирует мелодический 
+                реформаторский пафос, однако дальнейшее развитие приемов декодирования 
+                мы находим в работах академика В.Виноградова. Аллюзия наблюдаема. 
+                Аллитерация, как бы это ни казалось парадоксальным, параллельна. 
+                Мифопорождающее текстовое устройство прочно вызывает эпитет, причём сам 
+                Тредиаковский свои стихи мыслил как “стихотворное дополнение” к книге Тальмана.
+            </p>
+            <p>
+                Речевой акт традиционно осознаёт музыкальный дольник, но не рифмами. 
+                Различное расположение просветляет мелодический образ, 
+                таким образом постепенно смыкается с сюжетом. Силлабо-тоника, 
+                в первом приближении, просветляет мелодический ямб, таким образом 
+                в некоторых случаях образуются рефрены, кольцевые композиции, анафоры.
+            </p>
+        </div>
+        <div>
+            <p>
+                Представленный лексико-семантический анализ является психолингвистическим 
+                в своей основе, но мифопорождающее текстовое устройство аллитерирует мифологический 
+                генезис свободного стиха, об этом свидетельствуют краткость и завершенность формы, 
+                бессюжетность, своеобразие тематического развертывания.
+            </p>
+            <p>
+                Драма, по определению отражает брахикаталектический стих, хотя в 
+                существование или актуальность этого он не верит, а моделирует собственную реальность. 
+                Лексика осознаёт литературный палимпсест, об этом свидетельствуют краткость и 
+                завершенность формы, бессюжетность, своеобразие тематического развертывания.
+            </p>
+            <ul>
+                <li>Курит ли трупка мой</li>
+                <li><a href="" style="color: #0070ed;">из трупка тфой пихтишь</a></li>
+                <li class="Coffe" style="color:#353434 ;text-decoration: underline dotted;">Или мой кафе пил</li>
+                <li>тфой в щашешка сидишь</li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+body {
+    padding: 0;
+    margin: 0;
+	margin-left: 24px;
+	height: 1500px;
+}
+
+.text {
+    font-size: 20px;
+}
+
+h1 {
+	margin-bottom: 10px;
+}
+
+p {
+    margin: 0px;
+}
+
+/*Рейтинг*/
+.rating {
+	display:flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	letter-spacing: 1px;
+	padding-top: 40px;
+}
+
+.rating__item {
+	background-image: linear-gradient(0deg, #717171 0%, #d5d5d5 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 21px;
+	cursor: pointer;
+}
+
+.rating__item:hover {
+	background-image: linear-gradient(0deg, #ff6c00 0%, #fff600 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.rating__item:hover,
+.rating__item:hover ~ .rating__item {
+	background-image: linear-gradient(0deg, #ff6c00 0%, #fff600 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.rating[data-total-value="1"] .rating__item:nth-child(n + 5),
+.rating[data-total-value="2"] .rating__item:nth-child(n + 4),
+.rating[data-total-value="3"] .rating__item:nth-child(n + 3),
+.rating[data-total-value="4"] .rating__item:nth-child(n + 2),
+.rating[data-total-value="5"] .rating__item:nth-child(n + 1) {
+	background-image: linear-gradient(0deg, #ff6c00 0%, #fff600 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Прогрессбар */
+.progress {
+	position: relative;
+	width: 210px;
+	height: 13px;
+	border-radius: 6px;
+	border: 0;
+	margin-top: 40px;
+	overflow: hidden;
+	background-color: #ffffff;
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.29);
+}
+/*Шкала заполнения прогрессбара*/
+.progress__fill {
+	border-radius: 6px;
+	background-image: -webkit-linear-gradient( 90deg, rgb(40,191,20) 0%, rgb(139,218,26) 14%, rgb(40,191,20) 49%, rgb(171,255,88) 100%);
+	height: 100%;
+	width: 0%;
+	transition: all 0.2s;
+}
+/*Значение заполненности*/
+.progress__text {
+	position: absolute;
+	top: 50%;
+	right: 45%;
+	transform: translateY(-50%);
+	font-size: 9px;
+	font-family: "Verdana";
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.42);
+	color: rgb(0, 0, 0);
+}
+
+/*Кнопки*/
+.button {
+	margin-top: 29px;
+    padding: 0px;
+	margin-bottom: 0px;
+}
+
+.button li {
+	display: inline;
+}
+
+.btn {
+	font-size: 11px;
+	font-family: "Verdana";
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+	border-radius: 6px;
+	background-image: -moz-linear-gradient( 90deg, #e2e2e2 30%, #f2f2f2 70%);
+	background-image: -webkit-linear-gradient( 90deg, #e2e2e2 30%, #f2f2f2 70%);
+	background-image: -ms-linear-gradient( 90deg, #e2e2e2 30%, #f2f2f2 70%);
+	width: 86px;
+	height: 24px;
+	cursor: pointer;
+	border-width: 1px;
+	border-color:#a8a8a8;
+	border-style: solid;
+}
+
+.btn:focus {
+	box-shadow: 0px 0px 4px 0px rgba(0, 35, 214, 0.94);
+}
+
+.btn:hover {
+	background-image: -moz-linear-gradient( 90deg, #fdffcc 30%, #feffeb 70%);
+	background-image: -webkit-linear-gradient( 90deg, #fdffcc 30%, #feffeb 70%);
+	background-image: -ms-linear-gradient( 90deg, #fdffcc 30%, #feffeb 70%);
+}
+
+.btn:active {
+	background-image: -moz-linear-gradient( 90deg, #e2e2e2 30%, #f2f2f2 70%);
+	background-image: -webkit-linear-gradient( 90deg, #e2e2e2 30%, #f2f2f2 70%);
+	background-image: -ms-linear-gradient( 90deg, #e2e2e2 30%, #f2f2f2 70%);
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.26);
+	text-shadow: 0px -1px 0px rgba(255, 255, 255, 0.75);
+}
+
+/*Иконки браузеров*/
+.browsers_list_icons ul {
+	padding: 0px;
+	margin: 0px;
+	margin-top: 60px;
+	height: 132px;
+	display: inline-flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.browsers_list_icons li {
+	list-style-type: none;
+	font-size: 16px;
+	font-family: "Arial";
+
+}
+
+.browsers_list_icons li a {
+	text-decoration: none;
+
+}
+
+.chrome::before {
+	content: "Ch";
+	color: #22a12a;
+}
+
+.chrome::after {
+	content: "me";
+	color: #f9d411;
+}
+
+.chrome {
+	color:#c90000;
+	margin-right: 3px;
+}
+
+.firefox {
+	color: #f2a414;
+	margin-right: 12px;
+}
+
+.opera {
+	color: #c10e0e;
+	margin-right: 16px;
+}
+
+.safari {
+	color: #646464;
+}
+
+.internet_explorer {
+	color: #036da3;
+}
+
+.ie {
+	position: absolute;
+	right: 0;
+	width: 126px;
+	margin-right:23px ;
+}
+
+/* Верстка текста*/
+.heading {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	margin-top: 83px;
+	font-size: 24px;
+	margin-bottom: 31px;
+	color: #333333;
+}
+
+section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	text-indent: 15px;
+	line-height: 1.313;
+}
+
+section div {
+	top: 506.4px;
+	width: 375px;
+}
+
+section p {
+	margin-bottom: 31px;
+}
+
+.column_one {
+	margin-right: 88px;
+}
+
+section ul{
+	padding: 0;
+	margin-left: -15px;
+}
+
+section li {
+	list-style-type: "—";
+}
